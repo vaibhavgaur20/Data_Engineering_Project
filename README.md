@@ -3,6 +3,6 @@
 ## Introduction 
 ## About Data
 Name of the data:- Adventure Works  
-This is a perfect dataset interms of a project as it relates to real world sinarios where there are multiple Dimension and Facts table with year of information stored 
-Original source :- https://www.kaggle.com/datasets/ukveteran/adventure-works?resource=download  
+Adventure Works is a comprehensive dataset designed for real-world data engineering and analytics projects. It includes multiple dimension and fact tables, representing various business processes over several years. This dataset is perfect for understanding complex relationships in a structured database. It is widely used for ETL, data modeling, and reporting practices. Access the original dataset at [Kaggle](https://www.kaggle.com/datasets/ukveteran/adventure-works?resource=download )
+
 
