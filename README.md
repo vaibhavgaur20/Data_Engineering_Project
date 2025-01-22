@@ -61,4 +61,13 @@ Adventure Works is a comprehensive dataset designed for real-world data engineer
       spark.conf.set("fs.azure.account.oauth2.client.endpoint.<storage-account>.dfs.core.windows.net", "https://login.microsoftonline.com/<directory-id>/oauth2/token")
      ```
    - SAS Tokens
+     ```python
+     spark.conf.set("fs.azure.account.auth.type.<storage-account>.dfs.core.windows.net", "SAS")
+      spark.conf.set("fs.azure.sas.token.provider.type.<storage-account>.dfs.core.windows.net", "org.apache.hadoop.fs.azurebfs.sas.FixedSASTokenProvider")
+      spark.conf.set("fs.azure.sas.fixed.token.<storage-account>.dfs.core.windows.net", dbutils.secrets.get(scope="<scope>", key="<sas-token-key>"))
    - Account key
+     ```python
+     spark.conf.set(
+       "fs.azure.account.key.<storage-account>.dfs.core.windows.net",
+       dbutils.secrets.get(scope="<scope>", key="<storage-account-access-key>"))
+     ```
