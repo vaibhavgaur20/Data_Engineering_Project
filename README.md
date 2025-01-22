@@ -37,4 +37,10 @@ Adventure Works is a comprehensive dataset designed for real-world data engineer
 6. Lets Create Databricks and its cluster
 ![ClusterConfig](Clustercongif.png)
 
-7. Now Search for Microsoft Entra ID and then go to **App registration -> new registration **
+7. Now Search for Microsoft Entra ID and then go to **App registration** -> **new registration** and name it as awproject_app
+8. once created note down 2 things
+   - Apllication (client) ID :-  7e626afc-a398-4582-9e6c-fea8467999b3
+   - Directory (tenant) ID :- 30146931-56ac-4796-a894-1086a03edf7f
+   - Object ID :- 724df01f-0c9d-413d-86af-7f49b9f2a41b
+9. Now go to **Certificates & secretes** -> **New client secret** and name it as _awproject_
+10. Now copy the **Value** and store it somewhere 
