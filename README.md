@@ -43,4 +43,22 @@ Adventure Works is a comprehensive dataset designed for real-world data engineer
    - Directory (tenant) ID :- 30146931-56ac-4796-a894-1086a03edf7f
    - Object ID :- 724df01f-0c9d-413d-86af-7f49b9f2a41b
 9. Now go to **Certificates & secretes** -> **New client secret** and name it as _awproject_
-10. Now copy the **Value** and store it somewhere 
+10. Now copy the **Value** and store it somewhere Qbx8Q~vaPesnC4ThkXx7y5bruQLR~cG25W_qide-
+11. Now we need to assign the role to this application in order to access the Data Lake
+12. Let's go to **Data Lake Gen 2 -> Access Control(IAM) -> Add**
+    - Add Role :- Storage Blob Data Contributor (It performs both read and write)
+    - Next, Select Members and Search for awProject_app (Assigning to our App)
+13. Come back to Databricks and create a new workspace, **Workspace -> Create -> Folder(AW_PROJECT)->Notebook**
+14.  In order to mount the Datalake to our Databricks we can use this template [Link](https://learn.microsoft.com/en-us/azure/databricks/connect/storage/azure-storage)
+   - Azure service principal
+     ```python
+        service_credential = dbutils.secrets.get(scope="<secret-scope>",key="<service-credential-key>")
+
+        spark.conf.set("fs.azure.account.auth.type.<storage-account>.dfs.core.windows.net", "OAuth")
+      spark.conf.set("fs.azure.account.oauth.provider.type.<storage-account>.dfs.core.windows.net", "org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider")
+      spark.conf.set("fs.azure.account.oauth2.client.id.<storage-account>.dfs.core.windows.net", "<application-id>")
+      spark.conf.set("fs.azure.account.oauth2.client.secret.<storage-account>.dfs.core.windows.net", service_credential)
+      spark.conf.set("fs.azure.account.oauth2.client.endpoint.<storage-account>.dfs.core.windows.net", "https://login.microsoftonline.com/<directory-id>/oauth2/token")
+     ```
+   - SAS Tokens
+   - Account key
