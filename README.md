@@ -16,4 +16,8 @@ Adventure Works is a comprehensive dataset designed for real-world data engineer
 
 ## Steps Involved 
 1. Creat a Resource Group
-2. Creat a Data Lake Gen 2 and inside that create 3 containers intially as Raw(Bronze), Transformed(Silver) and Gold 
+2. Creat a Data Lake Gen 2 and inside that create 3 containers intially as Raw(Bronze), Transformed(Silver) and Gold
+3. Now, create a Azure Data Factory and inside that create a new pipeline
+4. Make this new pipeline as a dynamic pipeline by adding 3 activity Lookup, ForEach and copy
+
+![DynamicPipeline](DynamicPipeline.png)
