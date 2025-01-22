@@ -13,3 +13,7 @@ Adventure Works is a comprehensive dataset designed for real-world data engineer
 4. Databricks - Transformation
 5. Synapse Analytics - Warehouse 
 6. Power BI - Business Insights
+
+## Steps Involved 
+1. Creat a Resource Group
+2. Creat a Data Lake Gen 2 and inside that create 3 containers intially as Raw(Bronze), Transformed(Silver) and Gold 
