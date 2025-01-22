@@ -1,6 +1,8 @@
 # Data_Engineering_Project
 
 ## Introduction 
+The Adventure Works dataset is a robust, real-world dataset widely utilized in data engineering and analytics projects. It features multiple dimension and fact tables representing various business processes over several years, making it an ideal resource for understanding complex relationships in structured databases. This dataset is often used for ETL processes, data modeling, and reporting practices. The original dataset is accessible via Kaggle.
+
 ## About Data
 **Name of the data**:- Adventure Works  
 Adventure Works is a comprehensive dataset designed for real-world data engineering and analytics projects. It includes multiple dimension and fact tables, representing various business processes over several years. This dataset is perfect for understanding complex relationships in a structured database. It is widely used for ETL, data modeling, and reporting practices. Access the original dataset at [Kaggle](https://www.kaggle.com/datasets/ukveteran/adventure-works?resource=download )
