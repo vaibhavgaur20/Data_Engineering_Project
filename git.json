@@ -1,0 +1,54 @@
+[
+	{
+		"p_rel_url" : "vaibhavgaur20/Data_Engineering_Project/refs/heads/main/archive/AdventureWorks_Calendar.csv",
+		"p_sink_folder" : "Calendar",
+		"p_sink_file" : "Calendar.csv"
+	},
+	{
+		"p_rel_url" : "vaibhavgaur20/Data_Engineering_Project/refs/heads/main/archive/AdventureWorks_Product_Categories.csv",
+		"p_sink_folder" : "Product_Categories",
+		"p_sink_file" : "Product_Categories.csv"
+	},
+	{
+		"p_rel_url" : "vaibhavgaur20/Data_Engineering_Project/refs/heads/main/archive/AdventureWorks_Product_Subcategories.csv",
+		"p_sink_folder" : "Product_Subcategories",
+		"p_sink_file" : "Product_Subcategories.csv"
+	},
+	{
+		"p_rel_url" : "vaibhavgaur20/Data_Engineering_Project/refs/heads/main/archive/AdventureWorks_Products.csv",
+		"p_sink_folder" : "Products",
+		"p_sink_file" : "Products.csv"
+	},
+	{
+		"p_rel_url" : "vaibhavgaur20/Data_Engineering_Project/refs/heads/main/archive/AdventureWorks_Returns.csv",
+		"p_sink_folder" : "Returns",
+		"p_sink_file" : "Returns.csv"
+	},
+	{
+		"p_rel_url" : "vaibhavgaur20/Data_Engineering_Project/refs/heads/main/archive/AdventureWorks_Sales_2015.csv",
+		"p_sink_folder" : "Sales_2015",
+		"p_sink_file" : "Sales_2015.csv"
+	},
+	{
+		"p_rel_url" : "vaibhavgaur20/Data_Engineering_Project/refs/heads/main/archive/AdventureWorks_Sales_2016.csv",
+		"p_sink_folder" : "Sales_2016",
+		"p_sink_file" : "Sales_2016.csv"
+	},
+	{
+		"p_rel_url" : "vaibhavgaur20/Data_Engineering_Project/refs/heads/main/archive/AdventureWorks_Sales_2017.csv",
+		"p_sink_folder" : "Sales_2017",
+		"p_sink_file" : "Sales_2017.csv"
+	},
+	{
+		"p_rel_url" : "vaibhavgaur20/Data_Engineering_Project/refs/heads/main/archive/AdventureWorks_Territories.csv",
+		"p_sink_folder" : "Territories",
+		"p_sink_file" : "Territories.csv"
+	},
+	{
+		"p_rel_url" : "vaibhavgaur20/Data_Engineering_Project/refs/heads/main/archive/AdventureWorks_Customers.csv",
+		"p_sink_folder" : "AdventureWorks_Customers",
+		"p_sink_file" : "AdventureWorks_Customers.csv"
+	}
+]
+
+
