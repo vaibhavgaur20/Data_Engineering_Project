@@ -34,4 +34,7 @@ Adventure Works is a comprehensive dataset designed for real-world data engineer
 5. Hit Debug to run the pipeline 
 ![Success](ADFSuccess.png)
 
-6. Lets Create Databricks 
+6. Lets Create Databricks and its cluster
+![ClusterConfig](Clustercongif.png)
+
+7. Now Search for Microsoft Entra ID and then go to **App registration -> new registration **
