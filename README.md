@@ -18,16 +18,20 @@ Adventure Works is a comprehensive dataset designed for real-world data engineer
 1. Creat a Resource Group
 2. Creat a Data Lake Gen 2 and inside that create 3 containers intially as Raw(Bronze), Transformed(Silver) and Gold
 3. Now, create a Azure Data Factory and inside that create a new pipeline
-4. Make this new pipeline as a dynamic pipeline by adding 3 activity Lookup, ForEach
+4. Make this new pipeline as a dynamic pipeline by adding 2 activity Lookup, ForEach
    - Lookup
        - Add Linked Service and the Source dataset as JSON file which needs to be created and saved in Azure Data Lake Gen 2
        - Uncheck **Settings -> FirstRow**
        - [git.json](https://github.com/vaibhavgaur20/Data_Engineering_Project/blob/main/git.json)
    - ForEach
        - Add @activity('Lookup1').output.value inside **Settings -> Items**
-       - Inside ForEach create a new activity copy
+       - Inside ForEach create a new copy activity
        - Copy (needs 3 parameters in total)
            - Source :- Add Sorce Dataset as Delimited Text and add Linked Services as HTTP then at the end choose advanced settings and create a new parameter named as _p_rel_url_
            - Sink :- Add Sorce Dataset as Delimited Text and add Linked Services as Azure Data Lake Gen 2 then at the end choose advanced settings and create a 2 new parameter named as _p_sink_folder_ and _p_file_name_
 
 ![DynamicPipeline](DynamicPipeline.png)
+5. Hit Debug to run the pipeline 
+![Success](ADFSuccess.png)
+
+6. Lets Create Databricks 
