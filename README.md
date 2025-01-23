@@ -73,4 +73,8 @@ Adventure Works is a comprehensive dataset designed for real-world data engineer
        "fs.azure.account.key.<storage-account>.dfs.core.windows.net",
        dbutils.secrets.get(scope="<scope>", key="<storage-account-access-key>"))
      ```
-15 check out the full notebook [Databricks](https://github.com/vaibhavgaur20/Data_Engineering_Project/blob/main/Silver_Layer.ipynb)
+15. check out the full notebook [Databricks](https://github.com/vaibhavgaur20/Data_Engineering_Project/blob/main/Silver_Layer.ipynb)
+16. Now lets create Synapse Analytics service
+17. once created assign a role by going to your Data lake -> IAM -> add new role assignment -> Select Storage Blob Data Contributer -> hit next-> Managed Identity -> Select member as Synapse worlspace
+18. Azure Services do not require any app in order to share there data that's why we chose managed identity. As Databricks is not directly linked to Azure we need app to connect to it
+19. 
