@@ -1,9 +1,7 @@
 # Data_Engineering_Project
 
 ## Introduction 
-The Adventure Works Project showcases a robust implementation of end-to-end data engineering and analytics using Azure services. The project utilizes the widely recognized Adventure Works dataset, a comprehensive dataset with multiple dimension and fact tables representing various business processes across several years. This dataset, accessible on Kaggle, is an industry-standard for mastering ETL processes, data modeling, and reporting workflows.
-
-In this project, a modern data lakehouse architecture was employed to ensure seamless integration of data ingestion, transformation, storage, and reporting. By leveraging a combination of Azure services like Data Factory, Data Lake Gen2, Databricks, Synapse Analytics, and Power BI, the project highlights scalable and efficient data management practices, culminating in actionable business insights.
+This Azure project outlines a data pipeline that ingests data from an HTTP source. Data Factory orchestrates ingestion into Data Lake Gen2. Databricks transforms the data, which is then stored back in Data Lake Gen2. Synapse serves the transformed data for analysis and reporting in Power BI. This architecture provides a scalable and efficient solution for data-driven insights.
 ## About Data
 **Name of the data**:- Adventure Works  
 Adventure Works is a comprehensive dataset designed for real-world data engineering and analytics projects. It includes multiple dimension and fact tables, representing various business processes over several years. This dataset is perfect for understanding complex relationships in a structured database. It is widely used for ETL, data modeling, and reporting practices. Access the original dataset at [Kaggle](https://www.kaggle.com/datasets/ukveteran/adventure-works?resource=download )
