@@ -73,3 +73,4 @@ Adventure Works is a comprehensive dataset designed for real-world data engineer
        "fs.azure.account.key.<storage-account>.dfs.core.windows.net",
        dbutils.secrets.get(scope="<scope>", key="<storage-account-access-key>"))
      ```
+15 check out the full notebook [Databricks](https://github.com/vaibhavgaur20/Data_Engineering_Project/blob/main/Silver_Layer.ipynb)
