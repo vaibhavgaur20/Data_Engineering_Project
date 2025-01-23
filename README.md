@@ -77,5 +77,8 @@ Adventure Works is a comprehensive dataset designed for real-world data engineer
 16. Now lets create Synapse Analytics service
 17. once created assign a role by going to your Data lake -> IAM -> add new role assignment -> Select Storage Blob Data Contributer -> hit next-> Managed Identity -> Select member as Synapse worlspace
 18. Azure Services do not require any app in order to share there data that's why we chose managed identity. As Databricks is not directly linked to Azure we need app to connect to it
-19. Add one more role to it Select Storage Blob Data Contributer -> hit next -> Select member as your email-ID and assign it 
+19. Add one more role to it Select Storage Blob Data Contributer -> hit next -> Select member as your email-ID and assign it
+20. Go to Synapse Workspace -> Data -> + -> SQL database -> Serverless SQL pool
+21. Now create new SQL script and change the database to this newly created serverless pool
+22. 
 
