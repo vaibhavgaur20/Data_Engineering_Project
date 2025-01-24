@@ -78,5 +78,11 @@ Adventure Works is a comprehensive dataset designed for real-world data engineer
 19. Add one more role to it Select Storage Blob Data Contributer -> hit next -> Select member as your email-ID and assign it
 20. Go to Synapse Workspace -> Data -> + -> SQL database -> Serverless SQL pool
 21. Now create new SQL script and change the database to this newly created serverless pool
-22. 
+22. using this [View Script](https://github.com/vaibhavgaur20/Data_Engineering_Project/blob/main/CreatingViews.sql) Create Views and using [External Script](https://github.com/vaibhavgaur20/Data_Engineering_Project/blob/main/ExternalTable.sql) create External table to store the data into gold layer which is then used in Visualization by Power BI, Tableau or Looker.
+23. Establish connection to Power BI and your Synapse Analytics framework by providing Serverless SQL endpoint : synapseworkspace23012025-ondemand.sql.azuresynapse.net
+    and your server credentials.
+24. once the connection is established you can start building reports
+
+    ![powerBi](https://github.com/vaibhavgaur20/Data_Engineering_Project/blob/main/PowerBI.png)
+
 
